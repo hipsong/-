@@ -9,7 +9,7 @@ SHEET_ID = "1401-R2gVaXF6oD8qKTKGvRUIEpxwc_F0WLk21clGSTs"
 SHEET_URL = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv"
 
 # 3. 데이터 로드 함수 (캐싱 적용으로 속도 향상)
-@st.cache_data(ttl=300) # 5분마다 새 데이터를 가져옴
+@st.cache_data(ttl=10) # 5분마다 새 데이터를 가져옴
 def load_data():
     df = pd.read_csv(SHEET_URL)
     # 이름 없는 컬럼 제거 및 정리
