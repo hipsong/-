@@ -28,7 +28,7 @@ def load_weekly_data():
     return pd.DataFrame()
 
 # --- 3. 사이드바 메인 메뉴 ---
-st.sidebar.title("🏢 세라솔 관리 시스템")
+st.sidebar.title("🏢 세라솔 통합관리 시스템")
 main_menu = st.sidebar.radio("메인 메뉴를 선택하세요", ["📊생산일지", "📅 주간 업무 계획"])
 
 # ---------------------------------------------------------
