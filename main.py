@@ -17,7 +17,7 @@ def load_data():
     return df
 
 # 앱 타이틀
-st.title("🏭 실시간 원료 생산 작업 대시보드")
+st.title("🏭 세라솔 S/D 생산일지")
 st.info("구글 시트에 데이터를 입력하면 자동으로 업데이트됩니다.")
 
 try:
